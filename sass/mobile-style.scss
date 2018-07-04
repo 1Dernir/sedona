@@ -1,3 +1,152 @@
+////////////////////// переменные ////////////////////////
+$blue: #81b3d2;
+$blue_hover: #669ec0;
+$blue_down: #5496bd;
+$white: #ffffff;
+$grey: #333333;
+$black: #000000;
+
+
 body {
   font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  width: 320px;
+  margin: 0 auto;
 }
+////////////////////// стили header ////////////////////////
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list--element {
+  display: none;
+}
+.nav-list--show {
+  display: block;
+}
+.nav-list--close,
+.nav-list--open {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.nav-list--close::after,
+.nav-list--close::before {
+  content: "";
+  width: 27px;
+  height: 4px;
+  top: 8px;
+  left: -4px;
+  position: absolute;
+  background-color: $white;
+}
+.nav-list--close::after {
+  transform: rotate(45deg);
+}
+.nav-list--close::before {
+  transform: rotate(-45deg);
+}
+.nav-list--open::before {
+  content: "";
+  width: 23px;
+  height: 4px;
+  top: 8px;
+  left: -2px;
+  background-color: $blue;
+ box-shadow: 0 8px $blue, 0 -8px $blue;
+  position: absolute;
+}
+.nav-list :last-child a {
+  background-color: $white;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+.nav-list li:last-child,
+.nav-list li:first-child {
+  position: relative;
+}
+.nav-list__item {
+  display: block;
+  height: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+}
+.nav-list__item:hover {
+  background-color: $blue_hover;
+}
+.nav-list__item:active {
+  background-color: $blue_down;
+  color: #87b6d1;
+}
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+  z-index: 1;
+}
+////////////////////// стили main ////////////////////////
+.intro {
+  position: relative;
+  background-image: url("../img/bg-mobile.jpg");
+  background-position-x: -224px;
+  text-align: center;
+  padding-top: calc(50% - 69px);
+  padding-bottom: 82px;
+}
+.intro::after,
+.intro::before {
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border: 27px solid transparent;
+  position: absolute;
+}
+.intro::after {
+  right: 0;
+  border-right: 167px solid $white;
+  border-bottom: 0 solid $white;
+}
+.intro::before {
+  left: 0;
+  border-left: 167px solid $white;
+  border-bottom: 0 solid $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end file

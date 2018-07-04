@@ -6,21 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/mobile-style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="nav">
       <ul class="nav-list">
-        <li><a href="#" class="nav-list__item">главная</a></li>
-        <li><a href="#" class="nav-list__item">фото и видео</a></li>
-        <li><a href="#" class="nav-list__item">форма отзыва</a></li>
-        <li><a href="#" class="nav-list__item">html academy</a></li>
+        <li class="nav-list--element">
+          <a href="#" class="nav-list__item">главная</a>
+          <button id="closeNav" class="nav-list--close"></button>
+        </li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">фото и видео</a></li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">форма отзыва</a></li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">html academy</a></li>
+        <li>
+          <a class="nav-list__item"></a>
+          <div class="main-header__logo">
+            <img src="img/logo-mobile.png" alt="Логотип Седона">
+          </div>
+          <button id="openNav" class="nav-list--open"></button>
+        </li>
       </ul>
     </nav>
-    <div class="main-header__logo">
-      <img src="img/logo-mobile.png" alt="Логотип Седона">
-    </div>
   </header>
+  <main class="content">
+    <div class="intro">
+      <img class="intro__title" width="282" height="214" src="img/welcome-mobile.png" alt="welcome to sedona">
+    </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end file -->
