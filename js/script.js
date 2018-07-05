@@ -7,6 +7,7 @@ navListOpen.addEventListener("click", function(evt) {
   for (var i = 0; i < navListElements.length; i++) {
     navListElements[i].classList.add("nav-list--show");
   }
+  navListOpen.classList.add("hidden");
 });
 
 navListClose.addEventListener("click", function(evt) {
@@ -14,4 +15,5 @@ navListClose.addEventListener("click", function(evt) {
   for (var i = 0; i < navListElements.length; i++) {
     navListElements[i].classList.remove("nav-list--show");
   }
+  navListOpen.classList.remove("hidden");
 });

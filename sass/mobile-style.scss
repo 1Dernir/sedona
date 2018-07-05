@@ -3,7 +3,7 @@ $blue: #81b3d2;
 $blue_hover: #669ec0;
 $blue_down: #5496bd;
 $white: #ffffff;
-$grey: #333333;
+$grey: #eeeeee;
 $black: #000000;
 
 
@@ -13,13 +13,18 @@ body {
   width: 320px;
   margin: 0 auto;
 }
+.wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 ////////////////////// стили header ////////////////////////
 .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav-list--element {
+.nav-list--element,
+.hidden {
   display: none;
 }
 .nav-list--show {
@@ -106,9 +111,12 @@ body {
   text-align: center;
   padding-top: calc(50% - 69px);
   padding-bottom: 82px;
+  margin-bottom: 40px;
 }
 .intro::after,
-.intro::before {
+.intro::before,
+.reasons::after,
+.reasons::before {
   content: "";
   width: 0;
   height: 0;
@@ -126,11 +134,135 @@ body {
   border-left: 167px solid $white;
   border-bottom: 0 solid $white;
 }
-
-
-
-
-
+.reasons__title,
+.reasons__text {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+.reasons__title {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.reasons__text {
+  font-size: 14px;
+}
+.reasons {
+  position: relative;
+  padding-bottom: 43px;
+}
+.reasons::after {
+  right: 0;
+  border-right: 270px solid $blue;
+  border-bottom: 0 solid $blue;
+}
+.reasons::before {
+  left: 0;
+  border-left: 270px solid $blue;
+  border-bottom: 0 solid $blue;
+}
+.feature__item {
+  background-color: $blue;
+  padding-top: 1px;
+  padding-bottom: 35px;
+  color: $white;
+}
+.feature__title {
+  margin: 0;
+  margin-top: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.feature__text,
+.feature__number {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.feature__text {
+  line-height: 20px;
+}
+.feature__number {
+  margin-bottom: 18px;
+}
+.feature__image--city {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/photo-city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list__item-home {
+  padding-top: 35px;
+  background-image: url("../img/icon-house.png");
+  background-repeat: no-repeat;
+  background-position-y: 25px;
+}
+.feature__list-title {
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 50px;
+}
+.feature__list-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.list__item-gift {
+  padding-top: 10px;
+  background-image: url("../img/icon-gift.png");
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+}
+.list__item-food {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-image: url("../img/icon-food.png");
+  background-repeat: no-repeat;
+}
+.item-bridge {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.feature__image--bridge {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/photo-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item-small-square,
+.item-butiful-road,
+.item-few-people {
+  background-color: $grey;
+  color: $black;
+}
+.item-small-square .wrapper,
+.item-butiful-road .wrapper {
+  border-bottom: 1px solid #d6d6d6;
+}
+.item-small-square .feature__text,
+.item-butiful-road .feature__text,
+.item-few-people .feature__text {
+  margin-bottom: 30px;
+}
+.item-butiful-road .feature__title {
+  margin-top: 0;
+}
+.item-few-people .feature__title {
+  margin-top: 0;
+}
 
 
 
