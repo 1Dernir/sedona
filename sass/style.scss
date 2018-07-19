@@ -352,7 +352,48 @@ body {
   background-position-y: 15px;
 }
 
-
+@media screen and (min-width: 740px) {
+  .nav-list--close,
+  .nav-list--open {
+    display: none;
+  }
+  .nav-list--element {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    position: relative;
+  }
+  body {
+    width: 768px;
+  }
+  .nav-list__item {
+    background-color: inherit;
+    color: $black;
+    font-size: 14px;
+    border: none;
+  }
+  .nav-list__item:hover {
+    color: $blue_hover;
+    background-color: inherit;
+  }
+  .nav-list--element:nth-child(1) {
+    margin-left: 49px;
+  }
+  .nav-list--element:nth-child(2) {
+    margin-left: 77px;
+  }
+  .nav-list--element:nth-child(3) {
+    margin-left: 209px;
+  }
+  .nav-list--element:nth-child(4) {
+    margin-left: 49px;
+  }
+  .nav-list li:last-child {
+    position: absolute;
+    left: 50%;
+  }
+}
 
 
 
