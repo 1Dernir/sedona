@@ -365,7 +365,7 @@ body {
   background-position-y: 15px;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 768px) {
   .nav-list--close,
   .nav-list--open {
     display: none;
@@ -453,10 +453,12 @@ body {
   }
   .list__item-gift {
     background-image: url("../img/icon-gift-tablet.png");
+    order: 1;
   }
   .list__item-food {
     padding-bottom: 15px;
     background-image: url("../img/icon-food-tablet.png");
+    order: 2;
   }
   .feature__list-title {
     margin-top: 150px;
@@ -516,7 +518,60 @@ body {
   }
 }
 
-
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+  .nav-list--element:nth-child(1) {
+    margin-left: 90px;
+  }
+  .nav-list--element:nth-child(2) {
+    margin-left: 160px;
+  }
+  .nav-list--element:nth-child(3) {
+    margin-left: 380px;
+  }
+  .nav-list--element:nth-child(4) {
+    margin-left: 135px;
+  }
+  .intro {
+    background-image: url('../img/bg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .intro::after {
+    border-right: 600px solid $white;
+  }
+  .intro::before {
+    border-left: 600px solid $white;
+  }
+  .feature__item {
+    width: 330px;
+  }
+  .feature__image--city {
+    width: 800px;
+    height: 256px;
+    background-image: url(../img/photo-city-desktop.jpg);
+  }
+  .feature__list-item {
+    width: 165px;
+    background-position-x: 45px;
+  }
+  .feature__list {
+    justify-content: space-around;
+  }
+  .feature__image--bridge {
+    width: 800px;
+    height: 256px;
+    background-image: url('../img/photo-bridge-desktop.jpg');
+  }
+  .item-bridge {
+    width: 400px;
+  }
+  .map-frame {
+    width: 1200px;
+  }
+}
 
 
 
