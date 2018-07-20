@@ -12,6 +12,11 @@ body {
   font-size: 18px;
   width: 320px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px;
+}
+.background {
+  background-color: $white;
 }
 .wrapper {
   margin-left: 20px;
@@ -112,6 +117,10 @@ body {
   padding-top: calc(50% - 69px);
   padding-bottom: 82px;
   margin-bottom: 40px;
+}
+.intro__title {
+  width: 282px;
+  height: 214px;
 }
 .intro::after,
 .intro::before,
@@ -297,6 +306,10 @@ body {
   background-color: $blue_down;
   color: #87b6d1;
 }
+.map-frame {
+  width: 320px;
+  height: 350px;
+}
 .main-footer {
   text-align: center;
   margin-top: 40px;
@@ -393,7 +406,145 @@ body {
     position: absolute;
     left: 50%;
   }
+  .intro {
+    background-image: url('../img/bg-tablet.jpg');
+    padding-top: 77px;
+  }
+  .intro__title {
+      width: 460px;
+      height: 350px;
+  }
+  .intro::after {
+    border-right: 385px solid $white;
+  }
+  .intro::before {
+    border-left: 385px solid $white;
+  }
+  .reasons::after,
+  .reasons::before {
+    display: none;
+  }
+  .container {
+    display: flex;
+  }
+  .feature__item {
+    width: 256px;
+    padding: 30px 40px;
+  }
+  .feature__image--city,
+  .feature__image--bridge {
+    width: 512px;
+  }
+  .feature__title {
+    font-size: 21px;
+  }
+  .feature__list {
+    display: flex;
+  }
+
+  .feature__list-item {
+    padding-top: 0;
+    text-align: center;
+    background-position-y: 60px;
+    background-position-x: 85px;
+  }
+  .list__item-home {
+    background-image: url("../img/icon-house-tablet.png");
+  }
+  .list__item-gift {
+    background-image: url("../img/icon-gift-tablet.png");
+  }
+  .list__item-food {
+    padding-bottom: 15px;
+    background-image: url("../img/icon-food-tablet.png");
+  }
+  .feature__list-title {
+    margin-top: 150px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 21px;
+  }
+  .feature__list-text {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  .item-bridge {
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-top: 30px;
+    order: 1
+  }
+  .feature__item .wrapper {
+    border-bottom: none;
+  }
+  .item-butiful-road .feature__title {
+    margin-top: 27px;
+  }
+  .item-few-people .feature__title {
+    margin-top: 27px;
+  }
+  .search__title {
+    font-size: 30px;
+  }
+  .search .wrapper {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .search__btn {
+    width: 458px;
+    margin-top: 45px;
+    margin-bottom: 58px;
+  }
+  .search__title {
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+  .map-frame {
+    width: 768px;
+  }
+  .main-footer .container {
+    justify-content: space-around;
+  }
+  .footer__title {
+    margin-top: 12px;
+  }
+  .footer__copyright {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 35px;
+    background-position-x: 95px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
